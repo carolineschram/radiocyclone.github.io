@@ -1,0 +1,355 @@
+/* Universal CSS */
+
+
+/* Font Bank 
+font-family: 'Joti One', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Wire One', sans-serif;
+font-family: 'Underdog', cursive;
+*/
+
+@font-face {
+  font-family: 'Intense';
+  src: url('fonts/In_Tents.ttf');
+}
+@font-face {
+  font-family: 'KG';
+  src: url('fonts/KG.ttf');
+}
+
+@font-face {
+  font-family: 'Man';
+  src: url('fonts/Man.ttf');
+}
+
+
+
+html, body {
+	font-family: 'KG', 'Garamond';
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+
+/*NAVIGATION*/
+
+.nav {
+  background-image: url('images/bg_felt.jpg');
+  width: auto;
+  margin-top: 0px;
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+.nav ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.nav ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.nav.align-right ul li {
+  float: right;
+}
+.nav.align-center ul {
+  text-align: center;
+}
+.nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+.nav ul li a:hover {
+  color: #c9eff2;
+}
+.nav ul li a:hover:before {
+  width: 100%;
+}
+.nav ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+.nav ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+.nav ul li.last > a:after,
+.nav ul li:last-child > a:after {
+  display: none;
+}
+.nav ul li.active a {
+  color: #c9eff2;
+}
+.nav ul li.active a:before {
+  width: 100%;
+}
+.nav.align-right li.last > a:after,
+.nav.align-right li:last-child > a:after {
+  display: block;
+}
+.nav.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav ul li {
+    float: none;
+    display: block;
+  }
+  .nav ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  .nav ul li.last > a,
+  .nav ul li:last-child > a {
+    border: 0;
+  }
+  .nav ul li a:after {
+    display: none;
+  }
+  .nav ul li a:before {
+    display: none;
+  }
+}
+
+/*
+.nav {
+	border-bottom: ridge 1px black;
+	background-image: url("images/bg_felt.jpg");
+	background-repeat: repeat;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-top: 0;
+	height: 20px;
+	z-index: 9999;
+}
+
+.nav li{
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 5px;
+	color: white;
+	padding: none;
+	vertical-align: bottom;
+}
+
+.nav a{
+	color: white;
+	text-decoration: none;
+}
+
+#p2 img{
+	
+}
+*/
+
+
+/* Homepage CSS */
+
+.headerwrap{
+	padding: 30px;
+}
+.header {
+	margin: 0 auto;
+}
+
+
+.header h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Intense";
+}
+
+.header p {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+.row {
+	width: 1800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.row {
+	max-width: 900px;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row img{
+	width: 600px;
+}
+
+.main {
+	background-image: url("images/bg_felt.jpg");
+	text-align: center;
+	border-top: darkgrey 1px;
+}
+
+
+.main img {
+	text-align: center;
+	width: 300px;
+	padding: 10px;
+}
+
+
+
+.main div {
+	display: inline;
+}
+
+/* subpages */
+
+.subpageTitle {
+	text-align: center;
+}
+
+/*Pedals Page */
+
+.pedalWrap {
+	min-height: 525px;
+	margin-top: 25px;
+}
+
+.pedalWrap img{
+	width: 300px;
+	height: 100%;
+	margin: 10px;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.textRight {
+	text-align: right;
+	margin: 20px;
+}
+
+.textLeft {
+	text-align: left;
+	margin: 10px;
+}
+
+.slide img {
+	width: 40%;
+	max-height: 700px;
+	margin-right: 20%;
+	margin-bottom: 10%;
+}
+
+.slide p {
+	margin-left: 20%;
+	margin-bottom: 10%;
+}
+
+.slide {
+	vertical-align: top;
+	margin-top: 0px;
+}
+
+.slide h2 {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+
+.logos img {
+	max-width: 500px;
+}
+
+
+/*Scrolling Page Arrow Manipulation*/
+
+
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 8.5px 4px 8.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 8.5px 0 8.5px 4px;
+    border-color: transparent transparent transparent #fff;
+}
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    background: white;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+}
+      
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: transparent;
+    box-sizing: border-box;
+    border: 1px solid #24221F;
+}
