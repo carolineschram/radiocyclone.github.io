@@ -192,9 +192,11 @@ html, body {
 
 .headerwrap{
 	padding: 30px;
+	background-image: url('attachments/all4_edit.png');
 }
 .header {
 	margin: 0 auto;
+	
 }
 
 
